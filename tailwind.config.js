@@ -1,13 +1,16 @@
-module.exports = {
-  purge: [
 
-  ],
-  darkMode: false, // or 'media' or 'class'
+module.exports = {
+  content: ["./pages/**/*.{html,js}","./src/**/*.{html,js}"],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        iransans:["iransans"],
+        iransansbold:["iransansbold"],
+        iransanslight:["iransanslight"],
+        iransansmedium:["iransansmedium"],
+        iransansultralight:["iransansultralight"],
+      }
+    },
   },
   plugins: [],
 }

@@ -1,0 +1,9 @@
+#nav-content[aria-expanded="true"] {
+    display: block;
+}
+#nav-toggle[aria-expanded="true"] .close {
+    display:inline-block;
+}
+#nav-toggle[aria-expanded="true"] .open {
+    display:none;
+}

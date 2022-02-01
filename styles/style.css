@@ -1,3 +1,37 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
+
+
+@font-face {
+        font-family: 'iransans';
+
+        src:local(''), url("/src/fonts/iransans.ttf") format("ttf"),url("../src/fonts/iransans.eot") format("eot"),url("../src/fonts/iransans.woff") format("woff");
+    }
+@font-face {
+    font-family: 'iransansbold';
+
+    src:local(''), url("/src/fonts/iransansbold.ttf") format("ttf"),url("../src/fonts/iransansbold.eot") format("eot"),url("../src/fonts/iransansbold.woff") format("woff");
+}
+@font-face {
+    font-family: 'iransanslight';
+
+    src:local(''), url("/src/fonts/iransanslight.ttf") format("ttf"),url("../src/fonts/iransanslight.eot") format("eot"),url("../src/fonts/iransanslight.woff") format("woff");
+}
+@font-face {
+    font-family: 'iransansmedium';
+
+    src:local(''), url("/src/fonts/iransansmedium.ttf") format("ttf"),url("../src/fonts/iransansmedium.eot") format("eot"),url("../src/fonts/iransansmedium.woff") format("woff");
+}
+@font-face {
+    font-family: 'iransansultralight';
+
+    src:local(''), url("/src/fonts/iransansultralight.ttf") format("ttf"),url("../src/fonts/iransansultralight.eot") format("eot"),url("../src/fonts/iransansultralight.woff") format("woff");
+}
+*{
+    font-family: iransans;
+}
+
+
