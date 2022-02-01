@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 function Footer(){
 
-return <footer className="bg-primary_color w-screen h-auto flex flex-col justify-center items-center text-white space-y-8 pt-10 pb-1">
+return <footer className=" absolute bg-primary_color w-screen h-auto flex flex-col justify-center items-center text-white space-y-8 pt-10 pb-1 ">
     <div className="w-5/6 h-auto">
         <div className="w-full h-auto flex flex-row justify-between ">
             <div className="flex flex-col w-3/4 h-auto">
@@ -83,27 +83,27 @@ return <footer className="bg-primary_color w-screen h-auto flex flex-col justify
                 <a href="#" className="">تلفن: 38250305 (081)</a>
                 <a href="#">پست الکترونیک: info@zoomila.com</a>
                 <div className="flex flex-row flex-wrap justify-between mt-4">
-                    <Link href="https://www.instagram.com/zoomila.officials">
+                    <a href="https://www.instagram.com/zoomila.officials">
                         <img src="/svg/instagram.svg"  alt="اینستاگرام" className="w-6 h-6 	fill-white"/>
-                    </Link>
-                    <Link href="https://www.pinterest.com/zoomilaofficial/">
+                    </a>
+                    <a href="https://www.pinterest.com/zoomilaofficial/">
                         <img src="/svg/pinterest.svg" alt="پینترست" className="w-6 h-6"/>
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/zoomila/">
+                    </a>
+                    <a href="https://www.linkedin.com/in/zoomila/">
                         <img src="/svg/linkedin.svg" alt="لینکداین" className="w-6 h-6"/>
-                    </Link>
-                    <Link href="https://twitter.com/zoomilaofficial">
+                    </a>
+                    <a href="https://twitter.com/zoomilaofficial">
                         <img src="/svg/twitter.svg" alt="توییتر" className="w-6 h-6"/>
-                    </Link>
-                    <Link href="https://www.facebook.com/zoomilaofficial">
+                    </a>
+                    <a href="https://www.facebook.com/zoomilaofficial">
                         <img src="/svg/facebook.svg" alt="فیسبوک" className="w-6 h-6"/>
-                    </Link>
-                    <Link href="https://www.youtube.com/channel/UC6O_EfbSd7d8yxM8WypEEdw">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC6O_EfbSd7d8yxM8WypEEdw">
                         <img src="/svg/youtube.svg" alt="یوتیوب" className="w-6 h-6"/>
-                    </Link>
-                    <Link href="https://www.aparat.com/zoomila/">
+                    </a>
+                    <a href="https://www.aparat.com/zoomila/">
                         <img src="/svg/aparat.svg" alt="آپارات" className="w-6 h-6"/>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

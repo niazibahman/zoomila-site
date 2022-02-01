@@ -8,7 +8,7 @@ function Header() {
         setActive(!active);
     };
 
-    return <header className=" container mx-auto   flex  justify-center">
+    return <header className=" container mx-auto   flex  justify-center shadow-lg">
 
         <nav className='relative flex items-center flex-wrap bg-white p-3 w-screen xl:w-5/6 bg-white'>
 
