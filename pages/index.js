@@ -164,7 +164,7 @@ export default function Home() {
                                         className="w-full h-8 border border-gray-200 rounded-sm flex flex-col justify-items-center text-blue_accent text-sm my-2 py-1">
                                         <p className="flex justify-center">رهن و اجاره املاک در تهران</p>
                                     </div>
-                                    <div className="bg-tag_gray p-1 rounded-sm">
+                                    <div className="bg-tag_gray p-1 rounded-sm mb-2">
                                         شهرهای محبوب
                                     </div>
                                     <ul className="leading-7 text-city_explain text-sm">
@@ -199,7 +199,7 @@ export default function Home() {
                                             <li>خرید ویلا در شهریار</li>
                                         </a>
                                     </ul>
-                                    <div className="bg-tag_gray p-1 rounded-sm">
+                                    <div className="bg-tag_gray p-1 rounded-sm my-2">
                                         محله های محبوب تهران
                                     </div>
                                     <ul className="leading-7 text-city_explain text-sm">
@@ -232,7 +232,7 @@ export default function Home() {
                                                 className="text-sm text-blue_accent">287</p></li>
                                         </a>
                                     </ul>
-                                    <div className="bg-tag_gray p-1 rounded-sm">
+                                    <div className="bg-tag_gray p-1 rounded-sm my-2">
                                         سایر املاک در تهران
                                     </div>
                                     <ul className="leading-7 text-city_explain text-sm">

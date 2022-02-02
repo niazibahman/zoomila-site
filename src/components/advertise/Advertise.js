@@ -8,7 +8,7 @@ function Advertise(props) {
                 <div className="flex flex-row justify-between">
                   <span className="flex flex-row items-center">
                       <h1 className="text-lg font-extrabold">{props.title}</h1>
-                      <h3 className="text-sm text-text_footer mr-2">{props.city}</h3>
+                      <h3 className="text-sm text-city_explain mr-2">{props.city}</h3>
                   </span >
                     <span className="text-sm font-thin items-center">آگهی جدید</span>
                 </div>
@@ -35,23 +35,23 @@ function Advertise(props) {
                         <h2 className="mx-4">{props.estate}</h2>
                     </div>
                     <div className=" flex flex-row justify-between space-x-2">
-                        <span className="bg-emergency p-2 mx-2 rounded-lg">فوری</span>
+                        <span className="bg-emergency p-2 mx-2 rounded-sm">فوری</span>
                         <button className="bg-button_color rounded-3xl text-white py-2 px-4 mx-2 w-24">تماس</button>
                         <button className="bg-button_color rounded-3xl text-white py-2 px-4 mx-2 w-24">پیامک</button>
                     </div>
                 </div>
             </div>
             <div className="absolute bottom-0 border-b border-black w-full h-12 bg-ads_price p-2 flex flex-row justify-start items-center">
-                <p>قیمت</p>
-                <span>{props.price}</span>
+                <p className="ml-1">قیمت: </p>
+                <span className="font-iransansbold ml-1">{props.price}</span>
                 <p>تومان</p>
             </div>
         </div>
         <div className="relative w-4/12 h-64">
             <Link href=""><a><img src="/home.jpeg" alt="ملک" className=" object-cover w-80 h-64 border-b border-black"/></a></Link>
-            <span className="absolute left-0 top-0 px-1 h-6 flex flex-row justify-center opacity-50 bg-gray-600 text-text_footer rounded-br-md">
-                <p className="pt-1 text-sm">{props.piccount}</p>
-                <svg  xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 pt-1 pr-1" viewBox="0 0 20 20" fill="currentColor">
+            <span className="absolute left-0 top-0 px-1 h-6 flex flex-row justify-center opacity-70 bg-gray-600 text-text_footer rounded-br-md">
+                <p className="pt-1 text-sm text-white">{props.piccount}</p>
+                <svg  xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 pt-1 pr-1" viewBox="0 0 20 20" fill="white">
                     <path fillRule="evenodd"
                           d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
                           clipRule="evenodd"/>
