@@ -1,7 +1,10 @@
 import Head from 'next/head';
 import Link from "next/link";
+import Advertise from "../src/components/advertise/Advertise";
 
 export default function Home() {
+    var array=new Array(23);
+    array.fill(1,1,23);
     return (
         <div>
             <Head>
@@ -61,14 +64,92 @@ export default function Home() {
                 <div className="w-screen h-auto flex justify-center">
                     <div className="w-5/6 h-auto flex flex-col">
                         <div className="flex flex-row justify-between w-full h-auto ">
-                            <div className="w-72% h-92 my-4">
-                                <div className="w-full h-16 rounded-sm border border-black flex flex-row">
-
+                            <div className="w-72% h-auto my-4">
+                                <div className="w-full h-16 bg-white rounded-sm border border-black flex flex-row justify-between items-center px-2">
+                                    <div className=" flex  items-center ">
+                                        <select className="border-none focus:border-none focus:outline-0 w-60">
+                                            <option>تهران</option>
+                                            <option>همدان</option>
+                                            <option>اصفهان</option>
+                                            <option>مازندران</option>
+                                            <option>البرز</option>
+                                        </select>
+                                    </div>
+                                    <div className=" flex  items-center mr-3">
+                                        <select className="border-none focus:border-none focus:outline-0 w-60">
+                                            <option>تهران</option>
+                                            <option>پرند</option>
+                                            <option>شهریار</option>
+                                            <option>رباط کریم</option>
+                                            <option>ری</option>
+                                        </select>
+                                    </div>
+                                    <div className=" flex  items-center mr-3">
+                                        <select className="border-none focus:border-none focus:outline-0 w-92">
+                                            <option>آبشار</option>
+                                            <option>قیطریه</option>
+                                            <option>آجودانیه</option>
+                                            <option>تجریش</option>
+                                            <option>ازگل</option>
+                                        </select>
+                                    </div>
                                 </div>
+                                <div className="w-full h-auto bg-white rounded-sm border border-black flex flex-col justify-center items-center my-4 p-2">
+                                    <div>دسترسی سریع به مناطق مهم تهران</div>
+                                    <div className="flex flex-row flex-wrap justify-center items-center">
+                                        {
+                                            array.map((i,index)=><div key={i} className="border border-black rounded-md text-black p-1 m-1">املاک منطقه {index}</div>)
+                                        }
+                                    </div>
+                                </div>
+                                <div className="w-full h-12 rounded-sm border border-black flex flex-row justify-between items-center px-2 bg-white text-city_explain">
+                                    <div>10974 مورد یافت شد</div>
+                                    <div>
+                                        <select className="border-none focus:border-none focus:outline-0">
+                                            <option>محبوب ترین ها</option>
+                                            <option>جدیدترین</option>
+                                            <option>قدیمی ترین</option>
+                                            <option>گران ترین</option>
+                                            <option>ارزان ترین</option>
+                                            <option>عکس دارها</option>
+                                            <option>قیمت توافقی</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <select className="border-none focus:border-none focus:outline-0">
+                                            <option>تعداد نمایش</option>
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>20</option>
+                                            <option>50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <div className="flex justify-center"><img src="/longads1.gif" alt="تبلیغات" className="w-4/5"/></div>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <div className="flex justify-center"><img src="/longads2.jpeg" alt="تبلیغات" className="w-4/5"/></div>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <div className="flex justify-center"><img src="/longads1.gif" alt="تبلیغات" className="w-4/5"/></div>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
+                                <Advertise title="آپارتمان 145 متری در کوهک" piccount="12" city="تهران" address="منطقه 22 کوهک" description="موقعیت عالی" estate="املاک پرچین" price="200,000,000" room="دوخوابه" floor="طبقه اول"/>
                             </div>
-                            <div className="w-1/4 h-92 my-4">
-                                <div className="w-full h-16 rounded-sm border border-black flex flex-row items-center justify-between px-4 bg-white">
-                                    <input type="text" placeholder="جستجو بر اساس کد آگهی" className="border-none focus:border-none focus:outline-0"/>
+
+                            <div className="w-1/4 h-auto my-4">
+                                <div
+                                    className="w-full h-16 rounded-sm border border-black flex flex-row items-center justify-between px-4 bg-white">
+                                    <input type="text" placeholder="جستجو بر اساس کد آگهی"
+                                           className="border-none focus:border-none focus:outline-0"/>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
                                              viewBox="0 0 24 24" stroke="currentColor">
@@ -77,19 +158,143 @@ export default function Home() {
                                         </svg>
                                     </div>
                                 </div>
+                                <div
+                                    className=" w-full h-auto rounded-sm border border-black flex flex-col justify-center p-2 my-4 bg-white">
+                                    <div
+                                        className="w-full h-8 border border-gray-200 rounded-sm flex flex-col justify-items-center text-blue_accent text-sm my-2 py-1">
+                                        <p className="flex justify-center">رهن و اجاره املاک در تهران</p>
+                                    </div>
+                                    <div className="bg-tag_gray p-1 rounded-sm">
+                                        شهرهای محبوب
+                                    </div>
+                                    <ul className="leading-7 text-city_explain text-sm">
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید آپارتمان در تهران</li>
+                                        </a>
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید آپارتمان در پرند</li>
+                                        </a>
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید آپارتمان در همدان</li>
+                                        </a>
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید ویلا در شمال</li>
+                                        </a>
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید ویلا در چمستان</li>
+                                        </a>
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید ویلا در نور مازندران</li>
+                                        </a>
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید ویلا در آمل</li>
+                                        </a>
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید ویلا در نوشهر</li>
+                                        </a>
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید ویلا در محمودآباد</li>
+                                        </a>
+                                        <a href="#" className="hover:text-blue_accent">
+                                            <li>خرید ویلا در شهریار</li>
+                                        </a>
+                                    </ul>
+                                    <div className="bg-tag_gray p-1 rounded-sm">
+                                        محله های محبوب تهران
+                                    </div>
+                                    <ul className="leading-7 text-city_explain text-sm">
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید آپارتمان در
+                                                تهران</h3><p className="text-sm text-blue_accent">737</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید آپارتمان در پرند</h3>
+                                                <p className="text-sm text-blue_accent">573</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید آپارتمان در
+                                                همدان</h3><p className="text-sm text-blue_accent">420</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید ویلا در شمال</h3><p
+                                                className="text-sm text-blue_accent">362</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید ویلا در چمستان</h3><p
+                                                className="text-sm text-blue_accent">337</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید ویلا در نور
+                                                مازندران</h3><p className="text-sm text-blue_accent">292</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید ویلا در آمل</h3><p
+                                                className="text-sm text-blue_accent">287</p></li>
+                                        </a>
+                                    </ul>
+                                    <div className="bg-tag_gray p-1 rounded-sm">
+                                        سایر املاک در تهران
+                                    </div>
+                                    <ul className="leading-7 text-city_explain text-sm">
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید آپارتمان در
+                                                تهران</h3><p className="text-sm text-blue_accent">9377</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید خانه در تهران</h3><p
+                                                className="text-sm text-blue_accent">383</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید کلنگی در تهران</h3><p
+                                                className="text-sm text-blue_accent">337</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید زمین مسکونی در
+                                                تهران</h3><p className="text-sm text-blue_accent">211</p></li>
+                                        </a>
+                                        <a href="#" className="hover:font-bold hover:text-blue_accent">
+                                            <li className="flex flex-row justify-between"><h3>خرید دفتر کار در
+                                                تهران</h3><p className="text-sm text-blue_accent">206</p></li>
+                                        </a>
+                                    </ul>
+                                    <ul className="my-3 space-y-2">
+                                        <li className="rounded-sm"><a href="#"><img src="/ads1.jpeg" alt="تبلیغات"
+                                                                                    className="w-full rounded-sm  object-contain "/></a>
+                                        </li>
+                                        <li className="rounded-sm"><a href="#"><img src="/ads2.jpeg" alt="تبلیغات"
+                                                                                    className="w-full rounded-sm  object-contain"/></a>
+                                        </li>
+                                        <li className="rounded-sm"><a href="#"><img src="/ads3.gif" alt="تبلیغات"
+                                                                                    className="w-full  rounded-sm object-contain"/></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
                             </div>
                         </div>
-                        <div className="bg-white flex flex-col w-full text-city_explain text-md leading-7 p-3 rounded-b-sm mb-8">
+                        <div
+                            className="bg-white flex flex-col w-full text-city_explain text-md leading-7 p-3 rounded-b-sm mb-8">
                             <p className="text-justify">
-                                شهر تهران با سابقه دویست ساله پایتختی خود و همچنین با داشتن 22 منطقه شهری، بزرگترین شهر کشور است . علی رقم تمام شلوغی های این شهر بزرگ، تهران یکی از بزرگترین قطب های گردشگری کشور است. از طرفی بهترین و معروفترین مراکز آموزشی نظیر دانشگاه شهید بهشتی، دانشگاه صنعتی شریف و... در این شهر واقع شده اند. و طبق آخرین سرشماری در سال 95، تهران جمعیتی بیش از 8 میلیون نفر دارد.
+                                شهر تهران با سابقه دویست ساله پایتختی خود و همچنین با داشتن 22 منطقه شهری، بزرگترین شهر
+                                کشور است . علی رقم تمام شلوغی های این شهر بزرگ، تهران یکی از بزرگترین قطب های گردشگری
+                                کشور است. از طرفی بهترین و معروفترین مراکز آموزشی نظیر دانشگاه شهید بهشتی، دانشگاه صنعتی
+                                شریف و... در این شهر واقع شده اند. و طبق آخرین سرشماری در سال 95، تهران جمعیتی بیش از 8
+                                میلیون نفر دارد.
                             </p>
                             <h3 className="text-lg my-3">تقسیمات منطقه ای تهران</h3>
                             <p className="text-justify">
-                                محله های تهران در چهار جهت شرق، غرب، جنوب و شمال جای گرفته و از جمله مناطق مهم شمال تهران می توان به کامرانیه، زعفرانیه، قلهک و جردن اشاره کرد. همچنین محله های خراسان، خانی آباد، شوش و راه آهن هم از جمله مناطق جنوب تهران هستند.
+                                محله های تهران در چهار جهت شرق، غرب، جنوب و شمال جای گرفته و از جمله مناطق مهم شمال
+                                تهران می توان به کامرانیه، زعفرانیه، قلهک و جردن اشاره کرد. همچنین محله های خراسان، خانی
+                                آباد، شوش و راه آهن هم از جمله مناطق جنوب تهران هستند.
                             </p>
                             <h2 className="text-lg my-3">قیمت خانه وآپارتمان در تهران</h2>
                             <p className="text-justify">
-                                خرید خانه و آپارتمان در تهران بدلیل حجم زیاد محله و مناطقش دارای اختلاف قیمت های بالایی است. طبیعتا هر محله و منطقه ای دارای امکانات و ویژگی های بخصوصی است که سبب همین اختلافات قیمت می شود. اما بطور کلی قیمت خانه و املاک در شمال تهران بسیار گرانتر و بیشتراز مناطق جنوبی است . برای مثال قیمت خانه در زعفرانیه نسبت به قیمت خانه در تهران پارس تهران چیزی حدود  8- 9 برابر گرانتر است!
+                                خرید خانه و آپارتمان در تهران بدلیل حجم زیاد محله و مناطقش دارای اختلاف قیمت های بالایی
+                                است. طبیعتا هر محله و منطقه ای دارای امکانات و ویژگی های بخصوصی است که سبب همین اختلافات
+                                قیمت می شود. اما بطور کلی قیمت خانه و املاک در شمال تهران بسیار گرانتر و بیشتراز مناطق
+                                جنوبی است . برای مثال قیمت خانه در زعفرانیه نسبت به قیمت خانه در تهران پارس تهران چیزی
+                                حدود 8- 9 برابر گرانتر است!
                             </p>
                             <div className="flex flex-row justify-between my-4">
                                 <div className="flex flex-col  justify-between w-3/10 space-y-3">
@@ -130,24 +335,30 @@ export default function Home() {
                                 </div>
                             </div>
                             <hr/>
-                            <a href="https://www.zoomila.com/blog/%d8%ae%d8%b1%db%8c%d8%af-%d8%ae%d8%a7%d9%86%d9%87-%d8%af%d8%b1-%d8%aa%d9%87%d8%b1%d8%a7%d9%86" className="text-blue_accent my-6">درباره خرید خانه در تهران بخوانید</a>
+                            <a href="https://www.zoomila.com/blog/%d8%ae%d8%b1%db%8c%d8%af-%d8%ae%d8%a7%d9%86%d9%87-%d8%af%d8%b1-%d8%aa%d9%87%d8%b1%d8%a7%d9%86"
+                               className="text-blue_accent my-6">درباره خرید خانه در تهران بخوانید</a>
                             <hr/>
                             <div className="flex  my-6">
                                 <ul className="flex flex-row space-x-2">
                                     <li>
-                                        <span  className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید و فروش خانه در تهران</span>
+                                        <span
+                                            className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید و فروش خانه در تهران</span>
                                     </li>
                                     <li className=" pr-2">
-                                        <span  className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید و فروش آپارتمان در تهران</span>
+                                        <span
+                                            className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید و فروش آپارتمان در تهران</span>
                                     </li>
                                     <li>
-                                        <span  className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید و فروش ملک در تهران</span>
+                                        <span
+                                            className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید و فروش ملک در تهران</span>
                                     </li>
                                     <li>
-                                        <span  className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید و فروش ویلا در تهران</span>
+                                        <span
+                                            className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید و فروش ویلا در تهران</span>
                                     </li>
                                     <li>
-                                        <span  className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید خانه در تهران</span>
+                                        <span
+                                            className="bg-tag_gray px-4 rounded-sm hover:bg-button_color hover:text-white">خرید خانه در تهران</span>
                                     </li>
                                 </ul>
                             </div>

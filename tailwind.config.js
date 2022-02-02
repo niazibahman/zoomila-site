@@ -15,7 +15,9 @@ module.exports = {
       'filter_color':'#dadada',
       'city_explain':'#707070',
       'button_color':'#23C469',
-      'tag_gray':'#f2f2f2'
+      'tag_gray':'#f2f2f2',
+      'ads_price':'#FFE695',
+      'emergency':'#F2C021'
     },
     extend: {
       listStyleType: {
