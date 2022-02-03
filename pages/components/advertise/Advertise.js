@@ -7,7 +7,7 @@ function Advertise(props) {
             <div className=" p-2 h-auto w-full flex flex-col space-y-4">
                 <div className="flex flex-row justify-between">
                   <span className="flex flex-row items-center">
-                      <h1 className="text-lg font-extrabold">{props.title}</h1>
+                      <Link href={`/post`}><a><h1 className="text-lg font-extrabold">{props.title}</h1></a></Link>
                       <h3 className="text-sm text-city_explain mr-2">{props.city}</h3>
                   </span >
                     <span className="text-sm font-thin items-center">آگهی جدید</span>
@@ -48,7 +48,7 @@ function Advertise(props) {
             </div>
         </div>
         <div className="relative w-4/12 h-64">
-            <Link href=""><a><img src="/home.jpeg" alt="ملک" className=" object-cover w-80 h-64 border-b border-black"/></a></Link>
+            <Link href={`/post`}><a><img src="/home1.jpeg" alt="ملک" className=" object-cover w-80 h-64 border-b border-black"/></a></Link>
             <span className="absolute left-0 top-0 px-1 h-6 flex flex-row justify-center opacity-70 bg-gray-600 text-text_footer rounded-br-md">
                 <p className="pt-1 text-sm text-white">{props.piccount}</p>
                 <svg  xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 pt-1 pr-1" viewBox="0 0 20 20" fill="white">

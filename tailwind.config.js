@@ -10,6 +10,7 @@ module.exports = {
       white:colors.white,
       gray:colors.gray,
       black:colors.black,
+      red:colors.red,
       'text_footer':'#aaaaaa',
       'link_color':'#81b1bc',
       'filter_color':'#dadada',
@@ -17,7 +18,8 @@ module.exports = {
       'button_color':'#23C469',
       'tag_gray':'#f2f2f2',
       'ads_price':'#FFE695',
-      'emergency':'#F2C021'
+      'emergency':'#F2C021',
+      'title_bg_details':'#424242'
     },
     extend: {
       listStyleType: {

@@ -10,7 +10,7 @@ function Header() {
 
     return <header className=" container mx-auto   flex  justify-center shadow-lg">
 
-        <nav className='relative flex items-center flex-wrap bg-white p-3 w-screen xl:w-5/6 bg-white'>
+        <nav className='relative flex items-center flex-wrap bg-white py-3 w-screen xl:w-5/6 bg-white'>
 
             <button
                 className=' inline-flex p-3  rounded lg:hidden text-black ml-auto  outline-none'
@@ -42,7 +42,7 @@ function Header() {
 
 
                     <Link href='/'>
-                        <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center  '>
+                        <a className='lg:inline-flex lg:w-auto w-full pl-3 py-2 rounded text-black font-bold items-center justify-center  '>
                             صفحه اصلی
                         </a>
                     </Link>
@@ -79,10 +79,10 @@ function Header() {
                 </div>
             </div>
             <div className={`${
-                active ? 'absolute left-5 top-5  w-1/3' : 'absolute flex left-5 lg:top-2 md:top-3 h w-1/3'
-            } lg:left-5 lg:top-1 lg:w-1/5 h-16`}>
+                active ? 'absolute left-1 top-5  w-1/3' : 'absolute flex left-1 lg:top-2 md:top-3 h w-1/3'
+            } lg:left-0 lg:top-1 lg:w-1/5 h-16`}>
 
-                <img src="/zoomilalogo.png" className=" items-center p-2 mr-4 object-scale-down  "/>
+                <img src="/zoomilalogo.png" className=" items-center py-2  mr-12 object-scale-down  "/>
 
             </div>
 
